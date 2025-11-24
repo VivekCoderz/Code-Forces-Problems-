@@ -3,8 +3,13 @@
 using namespace std;
 int main()
 {
-    string s;
-    cin>>s;
-    if(s[0]>=97 && s[0]<=123) s[0]-=32;
-    cout<<s;
+    int Limak , bob;
+    cin>>Limak>>bob;
+    int year = 0;
+    while(Limak<=bob){
+        Limak*=3;
+        bob*=2;
+        year++;
+    }
+    cout<<year;
 }

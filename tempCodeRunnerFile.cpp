@@ -1,18 +1,14 @@
 #include <iostream>
+#include <string>
 using namespace std;
 int main()
 {
-    int time;
-    cin >> time;
-    int value = 0;
-    while (time--)
-    {
-        string s;
-        cin>>s;
-        if(s=="++X") ++value;
-        else if(s=="--X") --value;
-        else if(s=="X++") value++;
-        else if(s=="X-") value--;
+    int Limak , bob;
+    cin>>Limak>>bob;
+    int year = 0;
+    while(Limak<=bob){
+        Limak*=3;
+        bob*=2;
     }
-    cout<<value;
+    cout<<year;
 }
